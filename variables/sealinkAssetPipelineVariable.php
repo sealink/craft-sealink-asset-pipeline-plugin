@@ -17,10 +17,10 @@ class SealinkAssetPipelineVariable
   public function css()
   {
     $assets = [];
-    foreach(craft()->plugins->call('definesResources') as $handle => $anyResources)
+    foreach (craft()->plugins->call('definesResources') as $handle => $anyResources)
     {
       if ($anyResources) {
-        foreach(craft()->plugins->getPlugin($handle)->getCssResourcePaths() as $path)
+        foreach (craft()->plugins->getPlugin($handle)->getCssResourcePaths() as $path)
         {
           $assets[] = strtolower($handle) . '/resources/' . $path;
         }
@@ -32,10 +32,10 @@ class SealinkAssetPipelineVariable
   public function js()
   {
     $assets = [];
-    foreach(craft()->plugins->call('definesResources') as $handle => $anyResources)
+    foreach (craft()->plugins->call('definesResources') as $handle => $anyResources)
     {
       if ($anyResources) {
-        foreach(craft()->plugins->getPlugin($handle)->getJsResourcePaths() as $path)
+        foreach (craft()->plugins->getPlugin($handle)->getJsResourcePaths() as $path)
         {
           $assets[] = strtolower($handle) . '/resources/' . $path;
         }
