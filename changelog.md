@@ -1,5 +1,5 @@
-# Craft Sealink Asset Pipeline Plugin - Changelog
+# Craft SeaLink Asset Pipeline Plugin - Changelog
 
-## Unreleased
+## 1.0.0
 
 * [DC-569] Initial build for SeaLink Asset Pipeline module
