@@ -1,7 +1,7 @@
 {
   "name": "sealink/craft-sealink-asset-pipeline-plugin",
   "description": "A Craft CMS plugin to query for other plugin resources and bundle them",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [{
     "name": "Development",
     "email": "development@travellink.com.au"
