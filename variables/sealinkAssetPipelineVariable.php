@@ -10,8 +10,10 @@ class SealinkAssetPipelineVariable
     //need to instantiate minimee's Variable interface since it has some logic
     //not in the Service interface regarding tagging and caching assets
     //otherwise we would get the minimee plugin this way craft()->plugins->getPlugin('minimee')
-    Craft::import('plugins.minimee.variables.MinimeeVariable');
-    $this->minimee = new MinimeeVariable();
+    if(craft()->plugins->getPlugin('minimee')->isInitialized) {
+      Craft::import('plugins.minimee.variables.MinimeeVariable');
+      $this->minimee = new MinimeeVariable();
+    }
   }
 
   public function css()
