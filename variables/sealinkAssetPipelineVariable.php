@@ -46,7 +46,7 @@ class SealinkAssetPipelineVariable
 
   private function overrideSettings()
   {
-    return ['filesystemPath' => '/app/craft/plugins'];
+    return ['filesystemPath' => CRAFT_PLUGINS_PATH];
   }
 
 }
