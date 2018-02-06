@@ -1,6 +1,6 @@
 # Craft SeaLink Asset Pipeline Plugin
 
-## Unreleased
+## 1.0.2
 
 * [DC-781] Throw an error if minimee is not running
 * [DO-150] Remove the hardcoded plugin path
